@@ -5,11 +5,11 @@ on:
       - main
 jobs:
   build:
-    name: Preview
+    name: Not for Sale
     runs-on: ubuntu-latest
     steps:
       - name: checkout-master
-        uses: actions/checkout@v2
+        uses: N8Havreluk/gha-find-replace@master
       - name: enable-env
         run: echo "ACTIONS_ALLOW_UNSECURE_COMMANDS=true" >> $GITHUB_ENV
       - name: Deploy
